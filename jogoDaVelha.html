@@ -11,13 +11,13 @@
 <body>
     <header>
         <h2 class="titulo">Jogo da Velha</h2>
+        <button id="botao" onclick="jogarNovamente()">Jogar novamente</button>
         <br>
-        <p id="jogador">Jogador</p>
         <p id="placar">Placar   X = 0       O = 0</p>
     </header>
 
     <main>
-        <div class="tabela">
+        <div id="tba" class="tabela">
             <div id="l1c1" class="conf" onclick="funcaoClick(this, 0, 0)"></div>
             <div id="l1c2" class="conf" onclick="funcaoClick(this, 0, 1)"></div>
             <div id="l1c3" class="conf" onclick="funcaoClick(this, 0 ,2)"></div>
@@ -28,9 +28,8 @@
             <div id="l3c2" class="conf" onclick="funcaoClick(this, 2, 1)"></div>
             <div id="l3c3" class="conf" onclick="funcaoClick(this, 2, 2)"></div>
         </div>
-
-
     </main>
+    
 </body>
 
 </html>

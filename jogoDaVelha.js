@@ -126,99 +126,77 @@ function funcaoClick(id, i, j) {
 
     if (vet[0][0] + vet[0][1] + vet[0][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][0] + vet[0][1] + vet[0][2] == 0) {
-        alert("Vencedor = O");
-        jogarNovamente()
+        alert("Vencedor = O");     
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 0) {
-        alert("Vencedor = O");
-        jogarNovamente()
+        alert("Vencedor = O"); 
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 3) {
         alert("Vencedor = X");
-        jogarNovamente()
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 0) {
         alert("Vencedor = O");
-        jogarNovamente()
     }
     else {
-        var sds = 0;
-        for (var x = 0; x <= 2; x++) {
+        var soma = 0;
+        for (var i = 0; i <= 2; i++) {
             for (var j = 0; j <= 2; j++) {
-                sds += vet[x][j];
+                soma += vet[i][j];
             }
         }
-        if (sds == 4 || sds == 5) {
-            alert("Deu velha");
-            jogarNovamente()
+        if (soma == 5) {
+            alert("Deu velha"); 
         }
     }
 }
 
 function jogarNovamente() {
-    resp = prompt("Jogar novamente? (Y/N)").toUpperCase();
-    if (resp == 'Y') {
-        for (var x = 1; x <= 3; x++) {
+        for (var i = 1; i <= 3; i++) {
             for (var j = 1; j <= 3; j++) {
-                document.getElementById("l" + x + "c" + j).className = "conf";
+                document.getElementById("l" + i + "c" + j).className = "conf";
             }
         aux = 1;
         vet = [[-3, -3, -3], [-3, -3, -3], [-3, -3, -3]];           
         }
-    }
 }
