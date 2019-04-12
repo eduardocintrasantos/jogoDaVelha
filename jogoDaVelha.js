@@ -1,7 +1,8 @@
 var aux = 1;
 var vet = [[-3, -3, -3], [-3, -3, -3], [-3, -3, -3]];
 var resp;
-
+var x = 0;
+var o = 0;
 
 function funcaoClick(id, i, j) {
 
@@ -127,57 +128,75 @@ function funcaoClick(id, i, j) {
 
     if (vet[0][0] + vet[0][1] + vet[0][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][0] + vet[0][1] + vet[0][2] == 0) {
-        document.getElementById("ganhador").innerHTML = "Ganhador O"   
+        document.getElementById("ganhador").innerHTML = "Ganhador O" 
+        placaro();  
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 3) {
         document.getElementById("ganhador").innerHTML = "Ganhador X"
+        placarx();
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 0) {
         document.getElementById("ganhador").innerHTML = "Ganhador O"
+        placaro();
     }
     else {
         var soma = 0;
@@ -203,6 +222,12 @@ function jogarNovamente() {
         }
 }
 
-function placar(){
-    
+
+function placarx(){
+    x += 1;
+    document.getElementById("X").innerHTML = ("X = " + x);
+}
+function placaro(){
+    o += 1;
+    document.getElementById("O").innerHTML = ("O = " + o);
 }

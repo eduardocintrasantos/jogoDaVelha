@@ -28,9 +28,16 @@ header {
     border: none;  
 }
 
-#placar{
+.placar{
     float: right;
+    padding-left: 30px;
 }
+
+.placar2{
+    float: right;
+    margin-top: -35px;
+}
+
 .titulo{
     text-align: center;
     font-size: 120%;
