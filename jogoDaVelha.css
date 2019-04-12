@@ -19,7 +19,6 @@ header {
 #botao{
     float: left;
     margin-top: 40px;
-    margin-right: 40px;
     font-size: 15px;
     border-radius: 4px;    
     font-weight: bold;
@@ -31,8 +30,6 @@ header {
 
 #placar{
     float: right;
-    margin-top: 3px;
-    margin-right: 40px;
 }
 .titulo{
     text-align: center;

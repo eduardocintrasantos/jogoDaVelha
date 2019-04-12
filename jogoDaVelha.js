@@ -6,6 +6,7 @@ var resp;
 function funcaoClick(id, i, j) {
 
     console.log(vet)
+
     if (i == 0 && j == 0) {
         if (vet[0][0] == -3) {
             vet[0][0] = aux;
@@ -125,58 +126,58 @@ function funcaoClick(id, i, j) {
     }
 
     if (vet[0][0] + vet[0][1] + vet[0][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][0] + vet[0][1] + vet[0][2] == 0) {
-        alert("Vencedor = O");     
+        document.getElementById("ganhador").innerHTML = "Ganhador O"   
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[1][0] + vet[1][1] + vet[1][2] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][0] + vet[1][0] + vet[2][0] == 0) {
-        alert("Vencedor = O"); 
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][1] + vet[1][1] + vet[2][1] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][2] + vet[1][2] + vet[2][2] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[2][0] + vet[2][1] + vet[2][2] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][0] + vet[1][1] + vet[2][2] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 3) {
-        alert("Vencedor = X");
+        document.getElementById("ganhador").innerHTML = "Ganhador X"
     }
     else if (vet[0][2] + vet[1][1] + vet[2][0] == 0) {
-        alert("Vencedor = O");
+        document.getElementById("ganhador").innerHTML = "Ganhador O"
     }
     else {
         var soma = 0;
@@ -186,7 +187,7 @@ function funcaoClick(id, i, j) {
             }
         }
         if (soma == 5) {
-            alert("Deu velha"); 
+            document.getElementById("ganhador").innerHTML = "Deu Velha" 
         }
     }
 }
@@ -197,6 +198,11 @@ function jogarNovamente() {
                 document.getElementById("l" + i + "c" + j).className = "conf";
             }
         aux = 1;
-        vet = [[-3, -3, -3], [-3, -3, -3], [-3, -3, -3]];           
+        vet = [[-3, -3, -3], [-3, -3, -3], [-3, -3, -3]];   
+        document.getElementById("ganhador").innerHTML = "Jogo em Andamento"        
         }
+}
+
+function placar(){
+    
 }
